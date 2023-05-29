@@ -1,0 +1,60 @@
+plugins {
+    id 'com.android.library'
+    id 'org.jetbrains.kotlin.android'
+    id("com.google.devtools.ksp").version("1.7.20-1.0.7")
+}
+
+android {
+    compileSdk Config.targetSdk
+
+    defaultConfig {
+        minSdk Config.minSdk
+        targetSdk Config.targetSdk
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+    }
+
+    buildTypes {
+        production{}
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
+    kotlinOptions {
+        jvmTarget = Config.jvmTarget
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+    namespace 'com.feliperrm.mathem.dateselector'
+}
+
+dependencies {
+    implementation(project(":libraries:theme"))
+    implementation(AndroidX.coreKtx)
+    implementation(AndroidX.lifecycleRuntimeKtx)
+    implementation(AndroidX.activityCompose)
+    implementation(AndroidX.composeUi)
+    implementation(AndroidX.composeUiTooling)
+    implementation(AndroidX.material3)
+    implementation(AndroidX.appCompat)
+    implementation(AndroidX.constraintLayout)
+    implementation(Google.material)
+    implementation(AndroidX.navigationFragment)
+    implementation(AndroidX.viewModel)
+    implementation(AndroidX.liveData)
+    implementation(LiveEvent.core)
+    implementation(Moshi.core)
+    ksp(Moshi.codeGen)
+    testImplementation(Tests.junit)
+    androidTestImplementation(AndroidXTest.extJunit)
+    androidTestImplementation(AndroidXTest.extJunitKtx)
+    androidTestImplementation(AndroidXTest.espressoCore)
+}

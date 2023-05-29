@@ -1,0 +1,3 @@
+C:\Users\felip\AndroidStudioProjects\Mathem\libraries\theme\src\main\java\com\feliperrm\mathem\theme\ui\Color.kt
+C:\Users\felip\AndroidStudioProjects\Mathem\libraries\theme\src\main\java\com\feliperrm\mathem\theme\ui\Type.kt
+C:\Users\felip\AndroidStudioProjects\Mathem\libraries\theme\src\main\java\com\feliperrm\mathem\theme\ui\Theme.kt

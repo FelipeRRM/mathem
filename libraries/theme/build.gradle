@@ -1,26 +1,22 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'org.jetbrains.kotlin.android'
+    id("com.google.devtools.ksp").version("1.7.20-1.0.7")
 }
 
 android {
-    namespace Config.appId
     compileSdk Config.targetSdk
 
     defaultConfig {
-        applicationId Config.appId
         minSdk Config.minSdk
         targetSdk Config.targetSdk
-        versionCode Config.versionCode
-        versionName Config.versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        vectorDrawables {
-            useSupportLibrary true
-        }
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
+        production{}
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -33,20 +29,16 @@ android {
     kotlinOptions {
         jvmTarget = Config.jvmTarget
     }
-    buildFeatures {
-        compose true
-    }
-    composeOptions {
-        kotlinCompilerExtensionVersion '1.1.1'
-    }
-    packagingOptions {
-        resources {
-            excludes += '/META-INF/{AL2.0,LGPL2.1}'
-        }
-    }
+    namespace 'com.feliperrm.mathem.theme'
 }
 
 dependencies {
-    implementation(project(":features:dateselector"))
-    implementation(project(":libraries:theme"))
+    implementation(AndroidX.composeUi)
+    implementation(AndroidX.composeUiTooling)
+    implementation(AndroidX.material3)
+    implementation(AndroidX.coreKtx)
+    testImplementation(Tests.junit)
+    androidTestImplementation(AndroidXTest.extJunit)
+    androidTestImplementation(AndroidXTest.extJunitKtx)
+    androidTestImplementation(AndroidXTest.espressoCore)
 }

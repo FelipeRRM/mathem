@@ -14,3 +14,5 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Mathem"
 include ':app'
+include ':features:dateselector'
+include ':libraries:theme'
