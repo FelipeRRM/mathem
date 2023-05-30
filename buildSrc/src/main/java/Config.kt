@@ -5,4 +5,5 @@ object Config {
     const val versionCode = 999999
     const val versionName = "1.0"
     const val jvmTarget = "11"
+    const val kotlinCompilerExtensionVersion = "1.4.7"
 }

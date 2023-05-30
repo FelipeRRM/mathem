@@ -15,4 +15,8 @@ dependencyResolutionManagement {
 rootProject.name = "Mathem"
 include ':app'
 include ':features:dateselector'
+include ':libraries:application'
+include ':libraries:date:database'
+include ':libraries:date:network'
+include ':libraries:date:repository'
 include ':libraries:theme'

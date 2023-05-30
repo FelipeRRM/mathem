@@ -35,7 +35,7 @@ android {
     composeOptions {
         kotlinCompilerExtensionVersion = Config.kotlinCompilerExtensionVersion
     }
-    namespace 'com.feliperrm.mathem.theme'
+    namespace 'com.feliperrm.mathem.daterepository'
 }
 
 dependencies {

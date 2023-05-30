@@ -15,6 +15,11 @@
             <option value="$PROJECT_DIR$/features" />
             <option value="$PROJECT_DIR$/features/dateselector" />
             <option value="$PROJECT_DIR$/libraries" />
+            <option value="$PROJECT_DIR$/libraries/application" />
+            <option value="$PROJECT_DIR$/libraries/date" />
+            <option value="$PROJECT_DIR$/libraries/date/database" />
+            <option value="$PROJECT_DIR$/libraries/date/network" />
+            <option value="$PROJECT_DIR$/libraries/date/repository" />
             <option value="$PROJECT_DIR$/libraries/theme" />
           </set>
         </option>
