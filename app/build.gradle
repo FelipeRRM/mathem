@@ -50,4 +50,5 @@ dependencies {
     implementation(project(":features:dateselector"))
     implementation(project(":libraries:application"))
     implementation(project(":libraries:theme"))
+    implementation(project(":libraries:date:network"))
 }

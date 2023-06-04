@@ -4,19 +4,18 @@ plugins {
     id("com.google.devtools.ksp").version("1.8.21-1.0.11")
 }
 
+
 android {
     compileSdk Config.targetSdk
 
     defaultConfig {
         minSdk Config.minSdk
         targetSdk Config.targetSdk
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
-        production{}
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
@@ -31,6 +30,7 @@ android {
     }
     buildFeatures {
         compose true
+        buildConfig true
     }
     composeOptions {
         kotlinCompilerExtensionVersion = Config.kotlinCompilerExtensionVersion
@@ -43,6 +43,15 @@ dependencies {
     implementation(AndroidX.composeUiTooling)
     implementation(AndroidX.material3)
     implementation(AndroidX.coreKtx)
+    implementation(platform(OkHttp.bom))
+    implementation(OkHttp.core)
+    implementation(OkHttp.loggingInterceptor)
+    implementation(Retrofit.core)
+    implementation(Retrofit.moshiConverter)
+    implementation(Moshi.core)
+    implementation(Moshi.adapters)
+    implementation(Moshi.core)
+    ksp(Moshi.codeGen)
     testImplementation(Tests.junit)
     androidTestImplementation(AndroidXTest.extJunit)
     androidTestImplementation(AndroidXTest.extJunitKtx)

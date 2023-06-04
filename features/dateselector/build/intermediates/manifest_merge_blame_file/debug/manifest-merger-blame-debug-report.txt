@@ -2,49 +2,46 @@
 2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
 3    package="com.feliperrm.mathem.dateselector" >
 4
-5    <uses-sdk
-6        android:minSdkVersion="24"
-6-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml
-7        android:targetSdkVersion="33" />
-7-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml
-8
-9    <uses-permission android:name="android.permission.INTERNET" />
-9-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:4:5-66
-9-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:4:22-64
-10    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-10-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:5:5-78
-10-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:5:22-76
-11
-12    <application>
-12-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:7:5-24:19
-13        <activity
-13-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:8:9-22:20
-14            android:name="com.feliperrm.mathem.dateselector.ui.DateSelectorActivity"
-14-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:9:13-52
-15            android:exported="true"
-15-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:10:13-36
-16            android:label="@string/app_name"
-16-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:11:13-45
-17            android:theme="@style/Theme.Mathem" >
-17-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:12:13-48
-18            <intent-filter>
-18-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:13:13-17:29
-19                <action android:name="android.intent.action.MAIN" />
-19-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:14:17-69
-19-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:14:25-66
-20
-21                <category android:name="android.intent.category.LAUNCHER" />
-21-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:16:17-77
-21-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:16:27-74
-22            </intent-filter>
-23
-24            <meta-data
-24-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:19:13-21:36
-25                android:name="android.app.lib_name"
-25-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:20:17-52
-26                android:value="" />
-26-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:21:17-33
-27        </activity>
-28    </application>
-29
-30</manifest>
+5    <uses-sdk android:minSdkVersion="24" />
+5-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml
+6
+7    <uses-permission android:name="android.permission.INTERNET" />
+7-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:4:5-66
+7-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:4:22-64
+8    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+8-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:5:5-78
+8-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:5:22-76
+9
+10    <application>
+10-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:7:5-24:19
+11        <activity
+11-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:8:9-22:20
+12            android:name="com.feliperrm.mathem.dateselector.ui.DateSelectorActivity"
+12-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:9:13-52
+13            android:exported="true"
+13-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:10:13-36
+14            android:label="@string/app_name"
+14-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:11:13-45
+15            android:theme="@style/Theme.Mathem" >
+15-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:12:13-48
+16            <intent-filter>
+16-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:13:13-17:29
+17                <action android:name="android.intent.action.MAIN" />
+17-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:14:17-69
+17-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:14:25-66
+18
+19                <category android:name="android.intent.category.LAUNCHER" />
+19-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:16:17-77
+19-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:16:27-74
+20            </intent-filter>
+21
+22            <meta-data
+22-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:19:13-21:36
+23                android:name="android.app.lib_name"
+23-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:20:17-52
+24                android:value="" />
+24-->C:\Users\felip\AndroidStudioProjects\Mathem\features\dateselector\src\main\AndroidManifest.xml:21:17-33
+25        </activity>
+26    </application>
+27
+28</manifest>
