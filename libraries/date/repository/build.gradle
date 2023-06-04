@@ -38,6 +38,8 @@ android {
 }
 
 dependencies {
+    implementation(project(":libraries:date:database"))
+    implementation(project(":libraries:date:network"))
     implementation(AndroidX.composeUi)
     implementation(AndroidX.composeUiTooling)
     implementation(AndroidX.material3)

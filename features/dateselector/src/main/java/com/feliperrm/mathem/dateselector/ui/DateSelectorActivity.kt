@@ -11,10 +11,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.feliperrm.mathem.theme.ui.MathemTheme
+import getViewModel
 
 class DateSelectorActivity : ComponentActivity() {
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        val vm: DateSelectorViewModel = getViewModel { DateSelectorViewModel() }
         setContent {
             MathemTheme {
                 // A surface container using the 'background' color from the theme

@@ -45,4 +45,10 @@ class DateRemoteDataSource() {
             .build()
     }
 
+    private val service by lazy { configRetrofit.create(DateService::class.java) }
+
+    suspend fun getDeliveryDate() = service.getDates()
+
+    suspend fun getDeliveryTimes(dateString: String) = service.getTimes(dateString)
+
 }

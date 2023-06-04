@@ -39,6 +39,9 @@ android {
 
 dependencies {
     implementation(project(":libraries:theme"))
+    implementation(project(":libraries:date:database"))
+    implementation(project(":libraries:date:network"))
+    implementation(project(":libraries:date:repository"))
     implementation(AndroidX.coreKtx)
     implementation(AndroidX.lifecycleRuntimeKtx)
     implementation(AndroidX.activityCompose)
