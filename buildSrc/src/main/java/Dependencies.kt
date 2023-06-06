@@ -23,6 +23,7 @@ object AndroidX {
     const val activityCompose = "androidx.activity:activity-compose:1.7.2"
     const val composeUi = "androidx.compose.ui:ui:${Versions.compose}"
     const val composeUiTooling = "androidx.compose.ui:ui-tooling-preview:${Versions.compose}"
+    const val composeCompiler = "androidx.compose.compiler:compiler:${Versions.composeCompiler}"
     const val material3 = "androidx.compose.material3:material3:1.1.0"
 }
 

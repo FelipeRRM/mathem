@@ -47,6 +47,7 @@ dependencies {
     implementation(AndroidX.activityCompose)
     implementation(AndroidX.composeUi)
     implementation(AndroidX.composeUiTooling)
+    implementation(AndroidX.composeCompiler)
     implementation(AndroidX.material3)
     implementation(AndroidX.appCompat)
     implementation(AndroidX.constraintLayout)
