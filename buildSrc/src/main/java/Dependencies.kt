@@ -14,6 +14,8 @@ object AndroidX {
     const val serviceLifecycle = "androidx.lifecycle:lifecycle-service:${Versions.lifeCycle}"
     const val roomCompiler = "androidx.room:room-compiler:${Versions.room}"
     const val roomRuntime = "androidx.room:room-runtime:${Versions.room}"
+    const val roomKtx = "androidx.room:room-ktx:${Versions.room}"
+    const val roomTestHelpers = "androidx.room:room-testing:${Versions.room}"
     const val viewpager2 = "androidx.viewpager2:viewpager2:1.0.0"
     const val framePacing = "androidx.games:games-frame-pacing:1.9.1"
     const val performanceTuner = "androidx.games:games-performance-tuner:1.6.0"
@@ -21,6 +23,7 @@ object AndroidX {
     const val gamesController = "androidx.games:games-controller:1.1.0"
     const val datastore = "androidx.datastore:datastore-preferences:1.0.0"
     const val activityCompose = "androidx.activity:activity-compose:1.7.2"
+    const val composeRuntime = "androidx.compose.runtime:runtime:${Versions.compose}"
     const val composeUi = "androidx.compose.ui:ui:${Versions.compose}"
     const val composeUiTooling = "androidx.compose.ui:ui-tooling-preview:${Versions.compose}"
     const val composeCompiler = "androidx.compose.compiler:compiler:${Versions.composeCompiler}"
@@ -35,6 +38,11 @@ object AndroidXTest {
 
 object Google {
     const val material = "com.google.android.material:material:1.9.0"
+}
+
+object Hilt {
+    const val android = "com.google.dagger:hilt-android:${Versions.hilt}"
+    const val compiler = "com.google.dagger:hilt-compiler:${Versions.hilt}"
 }
 
 object OkHttp {

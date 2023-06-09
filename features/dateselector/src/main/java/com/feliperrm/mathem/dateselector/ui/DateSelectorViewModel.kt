@@ -7,19 +7,16 @@ import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.stateIn
-import kotlinx.coroutines.launch
 
 class DateSelectorViewModel(
     private val dateRepository: DataRepository = DataRepository()
 ) : ViewModel() {
 
     val stateUi: StateFlow<DateListUiState> = dateRepository.datesFlow.map { DateListUiState.Ui(it) }
-        .stateIn(viewModelScope, SharingStarted.Eagerly, DateListUiState.Loading)
+        .stateIn(viewModelScope, SharingStarted.Lazily, DateListUiState.Loading)
 
     init {
-        viewModelScope.launch {
-            dateRepository.loadDatesFromNetwork()
-        }
+        dateRepository.loadDatesFromNetwork()
     }
 
 }
