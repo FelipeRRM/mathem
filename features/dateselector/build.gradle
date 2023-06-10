@@ -55,7 +55,7 @@ dependencies {
     implementation(AndroidX.appCompat)
     implementation(AndroidX.constraintLayout)
     implementation(Google.material)
-    implementation(AndroidX.navigationFragment)
+    implementation(AndroidX.navigationCompose)
     implementation(AndroidX.viewModel)
     implementation(AndroidX.liveData)
     implementation(LiveEvent.core)

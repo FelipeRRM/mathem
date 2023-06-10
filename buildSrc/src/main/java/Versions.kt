@@ -1,4 +1,5 @@
 object Versions {
+    const val navigation = "2.5.3"
     const val moshi = "1.14.0"
     const val retrofit = "2.9.0"
     const val lifeCycle = "2.6.1"
