@@ -1,15 +1,17 @@
 package com.feliperrm.mathem.daterepository.data
 
+import com.feliperrm.mathem.datedatabase.data.DateLocalDataSource
 import com.feliperrm.mathem.datenetwork.data.DateRemoteDataSource
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.SupervisorJob
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.flow.MutableSharedFlow
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class DataRepository(
-    private val remoteDataSource: DateRemoteDataSource = DateRemoteDataSource()
+class DataRepository @Inject constructor(
+    private val remoteDataSource: DateRemoteDataSource,
+    private val localDataSource: DateLocalDataSource
 ) {
 
     private val scope = CoroutineScope(Dispatchers.IO + SupervisorJob())

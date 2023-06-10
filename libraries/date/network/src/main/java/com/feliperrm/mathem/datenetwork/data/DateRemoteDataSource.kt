@@ -7,7 +7,7 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 
-class DateRemoteDataSource() {
+class DateRemoteDataSource {
 
     private val okHttpClient by lazy {
         OkHttpClient.Builder()
