@@ -5,6 +5,7 @@ object AndroidX {
     const val navigationFragment = "androidx.navigation:navigation-fragment-ktx:${Versions.navigation}"
     const val navigationUi = "androidx.navigation:navigation-ui-ktx:${Versions.navigation}"
     const val navigationCompose = "androidx.navigation:navigation-compose:${Versions.navigation}"
+    const val hiltNavigationCompose = "androidx.hilt:hilt-navigation-compose:1.0.0"
     const val recyclerView = "androidx.recyclerview:recyclerview:1.2.1"
     const val recyclerViewSelection = "androidx.recyclerview:recyclerview-selection:1.1.0"
     const val viewModel = "androidx.lifecycle:lifecycle-viewmodel-ktx:${Versions.lifeCycle}"
@@ -70,6 +71,10 @@ object Moshi {
     const val adapters = "com.squareup.moshi:moshi-adapters:${Versions.moshi}"
     const val core = "com.squareup.moshi:moshi-kotlin:${Versions.moshi}"
     const val codeGen = "com.squareup.moshi:moshi-kotlin-codegen:${Versions.moshi}"
+}
+
+object Lottie {
+    const val compose = "com.airbnb.android:lottie-compose:6.0.1"
 }
 
 object Tests {

@@ -9,6 +9,6 @@ import androidx.room.PrimaryKey
 @Entity(
     tableName = "date"
 )
-data class LocalDate(
+data class LocalDateModel(
     @PrimaryKey val date: String
 )

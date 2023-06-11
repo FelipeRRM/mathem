@@ -1,5 +1,6 @@
 package com.feliperrm.mathem.datenetwork.data
 
+import android.util.Log
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import okhttp3.OkHttpClient
@@ -49,6 +50,8 @@ class DateRemoteDataSource {
 
     suspend fun getDeliveryDate() = service.getDates()
 
-    suspend fun getDeliveryTimes(dateString: String) = service.getTimes(dateString)
-
+    suspend fun getDeliveryTimes(dateString: String): List<DeliveryDateNetworkModel> {
+        Log.d("DateRemoteDataSource", "Requesting Deliveries from Network for date: $dateString")
+        return service.getTimes(dateString)
+    }
 }

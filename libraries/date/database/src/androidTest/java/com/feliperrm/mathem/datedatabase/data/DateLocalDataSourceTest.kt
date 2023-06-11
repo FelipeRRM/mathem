@@ -27,7 +27,7 @@ class DateLocalDataSourceTest {
     // Then: Then the DB should be empty
     @Test
     fun testNewDbIsEmpty() = runTest {
-        val dates = db.dateDao().observeAll().first()
+        val dates = db.dateDao().observeAllDates().first()
         assertEquals(0, dates.size)
     }
 
@@ -37,9 +37,9 @@ class DateLocalDataSourceTest {
     @Test
     fun insertDateAndObserve() = runTest {
         val dateString = "2023-09-18"
-        val newDate = LocalDate(dateString)
-        db.dateDao().upsert(newDate)
-        val dates = db.dateDao().observeAll().first()
+        val newDate = LocalDateModel(dateString)
+        db.dateDao().upsertDate(newDate)
+        val dates = db.dateDao().observeAllDates().first()
         assertEquals(1, dates.size)
         assertEquals(dateString, dates.first().date)
     }
