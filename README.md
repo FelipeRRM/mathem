@@ -1,6 +1,6 @@
 # Mathem: Book A Delivery - Assignment App
 
-This app was originally meant to serve as Mathem's code assignment, but I have been expanding it as a way to experiment and practice the new modern Android development techniques. Description of the assignment can be found here: [Mathem's Original Assignmwnt](https://github.com/FelipeRRM/mathem/blob/aaed92e5dd7474ff78fce70d7e2ee6ea25235b95/specs.pdf).
+This app was originally meant to serve as Mathem's code assignment, but I have been expanding it as a way to experiment and practice the new modern Android development techniques. Description of the assignment can be found here: [Mathem's Original Assignment](https://github.com/FelipeRRM/mathem/blob/aaed92e5dd7474ff78fce70d7e2ee6ea25235b95/specs.pdf).
 
 The app loads and displays possible delivery dates to the user, who can select one of them and book. The user can filter the delivery slots by excluding non in-home deliveries. Delivery dates and slots, after loaded from the network, are cached in a database and are not loaded again. The logic is very naive and just assumes the data stored in the database is up to date, and never really refreshes it. This is no good for a production app, which should care about syncing the data between the device and the network. Google has a pretty good documentation about it here: [Build an offline-first app](https://developer.android.com/topic/architecture/data-layer/offline-first).
 
