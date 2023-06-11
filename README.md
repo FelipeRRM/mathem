@@ -18,7 +18,7 @@ In this app you'll find:
 
 ## App Running
 
-
+![](https://github.com/FelipeRRM/mathem/blob/9426d0ffbe4913397fbfbd1a26ec08f498be35dd/mathem.gif?raw=true)
 
 ## Opening & Building in Android Studio
 
