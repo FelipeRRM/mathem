@@ -1,4 +1,4 @@
-# Mathem Book A Delivery - Sample Assignment App
+# Mathem: Book A Delivery - Assignment App
 
 This app was originally meant to serve as Mathem's code assignment, but I have been expanding it as a way to experiment and practice the new modern Android development techniques. Description of the assignment can be found here: [Mathem's Original Assignmwnt](https://github.com/FelipeRRM/mathem/blob/aaed92e5dd7474ff78fce70d7e2ee6ea25235b95/specs.pdf).
 
