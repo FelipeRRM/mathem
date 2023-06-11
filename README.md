@@ -11,7 +11,7 @@ In this app you'll find:
 *   A single-activity architecture, using **[Navigation Compose](https://developer.android.com/jetpack/compose/navigation)**.
 *   A presentation layer that contains a Compose screen (View) and a **ViewModel** per screen (or feature).
 *   Reactive UIs using **[Flow](https://developer.android.com/kotlin/flow)** and **[coroutines](https://kotlinlang.org/docs/coroutines-overview.html)** for asynchronous operations.
-*   A **data layer** with a repository and two data sources (local using Room and a remote).
+*   A **data layer** with a repository and two data sources (local using [Room](https://developer.android.com/training/data-storage/room) and a remote).
 *   Dependency injection using [Hilt](https://developer.android.com/training/dependency-injection/hilt-android).
 *   Multi-module approach. Separated into feature-modules and libraries. Very good strategy to avoid circular dependencies, allows for easy code reusability, facilitates multiple teams working in the same app and enables great features like instant-app experiences. Build times are also greatly reduced in a multi-modular project, when structured properly. A complete guide to the approach utilized here can be found here: [Modularization - Why you should care](https://jeroenmols.com/blog/2019/03/06/modularizationwhy/) 
 *   A couple of industry-standard libraries are used throughout the project, like Retrofit, Moshi, Lottie, OkHttp
